@@ -10,7 +10,7 @@ Gloria Evans, Katie Blood, Ishmael Sandiford, Prince Amponsah, Nick Hancock
 
 Our team will be using publicly available loan application data from Lending Club and applying machine learning techniques learned in class to train a categorial model to predict loan approval or denial based on specified criteria.
 
-We will analyze X years of data and, through exploratory data analysis, determine what is best to with our work. We will then develop multiple machine learning models and, based upon the predictive performance of either model, select one to further develop and present.
+We will analyze X years of data and, through exploratory data analysis, determine what of the provided information is best to use with our work. We will then develop multiple machine learning models and, based upon the predictive performance of each, select one to further develop and present.
 
 ## Team Responsibilities:
 
