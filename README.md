@@ -1,5 +1,7 @@
 # University of Richmond Data Analytics & Visualization Boot Camp Final Project: Machine Learning
 
+<img src="LendingClubLogo.png" >
+
 ## Team Members: 
 
 Gloria Evans, Katie Blood, Ishmael Sandiford, Prince Amponsah, Nick Hancock
