@@ -30,3 +30,24 @@ body {
     color: rgb(54, 52, 52);
     font-size: 20px;
   }
+
+  /* unvisited link */
+a:link, a:active {
+  color: rgb(0, 4, 255);
+  font-size: 25px;
+}
+
+/* visited link */
+a:visited {
+  color: green;
+}
+
+/* mouse over link */
+a:hover {
+  color: rgb(214, 29, 54);
+}
+
+/* selected link */
+a:active {
+  color: blue;
+}

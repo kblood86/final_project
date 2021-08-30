@@ -14,6 +14,10 @@ def home():
 def dashboard():
     return render_template('dashboard.html')
 
+@app.route('/background')
+def background():
+    return render_template('background.html')
+
 
 @app.route('/application')
 def application():
