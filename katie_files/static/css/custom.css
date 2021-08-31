@@ -51,3 +51,9 @@ a:hover {
 a:active {
   color: blue;
 }
+
+.jumbotron {
+ 
+  padding: 14px;
+  
+}
