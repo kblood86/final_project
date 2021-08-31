@@ -7,12 +7,16 @@ app = Flask(__name__)
 @app.route('/')
 @app.route('/home')
 def home():
-    return render_template('index.html')
+    return render_template('home2.html')
 
 
 @app.route('/dashboard')
 def dashboard():
     return render_template('dashboard.html')
+
+@app.route('/background')
+def background():
+    return render_template('background.html')
 
 
 @app.route('/application')
