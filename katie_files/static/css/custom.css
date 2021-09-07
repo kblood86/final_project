@@ -32,15 +32,11 @@ body {
   }
 
   /* unvisited link */
-a:link, a:active {
+a:link, a:active, a:visited {
   color: rgb(0, 4, 255);
   font-size: 25px;
 }
 
-/* visited link */
-a:visited {
-  color: green;
-}
 
 /* mouse over link */
 a:hover {
