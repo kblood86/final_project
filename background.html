@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="Data Science & Data Analytics Project">
+  <title>Final Project</title>
+  <!-- Bootstrap core CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+    integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <!-- Custom styles -->
+  <link rel="stylesheet" href="{{url_for('static', filename='css/custom.css')}}" />
+</head>
+
+<!-- Jinja2 stuff related to generating nav and setting active state. Add more pages here! -->
+<!-- {% set navigation_bar = [('/', 'Home'), ('/background', 'Background'), ('/dashboard', 'Dashboard'), ('/application', 'Application'), ('/datacleaning', 'Data Cleaning')] -%}
+{% set active_page = active_page|default('home') -%} -->
+
+
+  <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+    <!-- Navbar branding. -->
+    <a class="navbar-brand" href="#">Final Project</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault"
+      aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+      <ul class="navbar-nav mr-auto">
+        <!-- {% for href, title in navigation_bar %}
+        {% if title == active_page %} -->
+        <li class="nav-item active">
+          <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="background.html">Background<span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="dashboard.html">Dashboard <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="application.html">Application <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="data.html">Data Cleaning<span class="sr-only">(current)</span></a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+<div style='margin-top: 100px; text-align: center;'>
+  <h1>Background</h1>
+<br>
+</div>
+<div class="container">
+  <div>
+  
+    <p> Our team used publicly available loan application data from Lending Club and applied machine learning techniques learned in class to train a categorial model to predict loan approval or denial based on specified criteria.
+
+      We analyzed data from 2018 and, through exploratory data analysis, determined what of the provided information was best to use with our work. We built Machine learning models (Supervised) based on the two data sets we have.
+      
+      First, we looked at the combination of the data for approved and denied application. A prediction model was built to determine which variables are most important in understanding how an application gets approved or denied. 
+      The two most important factors were determined to be risk score (credit score) and employment history. We also trained the dataset to predict a loan approval or denial.
+      The best method to use was the Random Forest Classifier when compared to Stochastic Gradient Descent.
+      
+      Second, the approved dataset was used to determine what factors determine how low, or high, an applicant's interest rates will be once they are approved. 
+      
+       </p>
+      
+      
+  </div>
+  <div class="container">
+    
+      <div class="col-md-12 jumbotron text-center">
+        
+        <img src="static/images/LendingClubLogo.png" alt="lending club" class="center">   
+      </div>
+    </div>
+    <div class="container">
+      <div>
+        
+        <a href="https://www.kaggle.com/wordsforthewise/lending-club" target="_blank">Data Source</a> <br>
+        <a href="https://www.kaggle.com/wordsforthewise/eda-with-python" target="_blank">Exploratory Data Analysis Guide</a>
+        
+          
+          
+      </div>
+
+      <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+      integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+      crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+      integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+      crossorigin="anonymous"></script>
+    <script src="{{url_for('static', filename='js/base.js')}}"></script>
+    </body>
+    
+    </html>
